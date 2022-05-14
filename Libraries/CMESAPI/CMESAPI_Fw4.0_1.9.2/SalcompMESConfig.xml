@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <MSSServer>
+    <!--Set Rest API Server IP or Name -->
+    <IPOrName>CNGUGXIAAPI</IPOrName>
+	<Port>8082</Port>
+    <!--Debug mode, not connect MSS -->
+    <Debug>No</Debug>
+    <Logging>1</Logging>
+  </MSSServer>
+  <OperationPlan>
+    <!--Set  Equipment number in MSS-->
+    <EquipmentNo>4B2F.95.SNLINK.01</EquipmentNo>
+  </OperationPlan>
+   <PackageSetting>
+	<InvolvedColumnName>SERIALNUMBER</InvolvedColumnName>
+	<UpdateColumn>false</UpdateColumn>
+	<ValidateWorkorder>0</ValidateWorkorder>
+	<WorkorderNo>000100569498</WorkorderNo>
+	<LanguageCode>EN</LanguageCode>
+	<BlockSNGeneration>1</BlockSNGeneration>
+	<AssembleToMASNReg>1</AssembleToMASNReg>
+  </PackageSetting>
+</Config>
