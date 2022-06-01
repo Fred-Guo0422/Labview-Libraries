@@ -12,6 +12,7 @@
 1.  HSL Library API
 2.  Salcomp Mes API
 3.  老化一体机 RFID Read API
+4.  Auto Complete
 
 
 #### 使用说明
