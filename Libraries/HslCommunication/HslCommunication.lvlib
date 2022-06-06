@@ -27,9 +27,10 @@
 	</Item>
 	<Item Name="PLC" Type="Folder">
 		<Item Name="Inovance" Type="Folder">
-			<Item Name="InovanceSerial.lvclass" Type="LVClass" URL="../InovanceSerial/InovanceSerial.lvclass"/>
-			<Item Name="InovanceTCP.lvclass" Type="LVClass" URL="../InovanceTCP/InovanceTCP.lvclass"/>
+			<Item Name="InovanceSerialModbusRtu.lvclass" Type="LVClass" URL="../InovanceSerial/InovanceSerialModbusRtu.lvclass"/>
+			<Item Name="InovanceModbusTcp.lvclass" Type="LVClass" URL="../InovanceTCP/InovanceModbusTcp.lvclass"/>
 		</Item>
 		<Item Name="Abstract PLC Controler.lvclass" Type="LVClass" URL="../Abstract PLC Controler/Abstract PLC Controler.lvclass"/>
 	</Item>
+	<Item Name="ModbusRtu.lvclass" Type="LVClass" URL="../lModbusRtu/ModbusRtu.lvclass"/>
 </Library>

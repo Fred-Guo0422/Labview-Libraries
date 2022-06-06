@@ -11,37 +11,37 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="HslCommunication" Type="Folder">
+			<Item Name="Test" Type="Folder">
+				<Item Name="PLC Test.vi" Type="VI" URL="../Libraries/HslCommunication/Test/PLC Test.vi"/>
+			</Item>
+			<Item Name="EventLogger.lvlibp" Type="LVLibp" URL="../Libraries/HslCommunication/EventLogger.lvlibp">
+				<Item Name="Application Directory.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="Composed Log.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/Composed Log/Composed Log.lvlib"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/sysdir.llb/Get System Directory.vi"/>
+				<Item Name="IStringFormat.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/IStringFormat/IStringFormat.lvclass"/>
+				<Item Name="Logger.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/Logger.lvclass"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="String Log Sink.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/String Log Sink/String Log Sink.lvclass"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/sysdir.llb/System Directory Type.ctl"/>
+				<Item Name="Text File Sink.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/Text File Sink/Text File Sink.lvclass"/>
+			</Item>
+			<Item Name="HslCommunication.lvlib" Type="Library" URL="../Libraries/HslCommunication/HslCommunication.lvlib"/>
+			<Item Name="Logger Test" Type="VI" URL="../Libraries/HslCommunication/Logger Test"/>
+		</Item>
 		<Item Name="Libraries" Type="Folder">
 			<Item Name="Reader" Type="Folder">
 				<Item Name="UART.lvlib" Type="Library" URL="../Libraries/Reader/UART/UART.lvlib"/>
 			</Item>
 			<Item Name="UART" Type="Folder">
 				<Item Name="UART_With_Buffer.vi" Type="VI" URL="../Libraries/UART/UART_With_Buffer.vi"/>
-			</Item>
-			<Item Name="HslCommunication" Type="Folder">
-				<Item Name="Test" Type="Folder">
-					<Item Name="PLC Test.vi" Type="VI" URL="../Libraries/HslCommunication/Test/PLC Test.vi"/>
-				</Item>
-				<Item Name="EventLogger.lvlibp" Type="LVLibp" URL="../Libraries/HslCommunication/EventLogger.lvlibp">
-					<Item Name="Application Directory.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Application Directory.vi"/>
-					<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
-					<Item Name="Composed Log.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/Composed Log/Composed Log.lvlib"/>
-					<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
-					<Item Name="Error Code Database.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
-					<Item Name="Get System Directory.vi" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/sysdir.llb/Get System Directory.vi"/>
-					<Item Name="IStringFormat.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/IStringFormat/IStringFormat.lvclass"/>
-					<Item Name="Logger.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/Logger.lvclass"/>
-					<Item Name="LVDateTimeRec.ctl" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
-					<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/numeric/LVNumericRepresentation.ctl"/>
-					<Item Name="NI_Data Type.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/Data Type/NI_Data Type.lvlib"/>
-					<Item Name="NI_FileType.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/NI_FileType.lvlib"/>
-					<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-					<Item Name="String Log Sink.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/String Log Sink/String Log Sink.lvclass"/>
-					<Item Name="System Directory Type.ctl" Type="VI" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/Utility/sysdir.llb/System Directory Type.ctl"/>
-					<Item Name="Text File Sink.lvclass" Type="LVClass" URL="../Libraries/HslCommunication/EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/Text File Sink/Text File Sink.lvclass"/>
-				</Item>
-				<Item Name="HslCommunication.lvlib" Type="Library" URL="../Libraries/HslCommunication/HslCommunication.lvlib"/>
-				<Item Name="Logger Test" Type="VI" URL="../Libraries/HslCommunication/Logger Test"/>
 			</Item>
 			<Item Name="CMESAPI.lvlib" Type="Library" URL="../Libraries/CMESAPI/CMESAPI.lvlib"/>
 			<Item Name="ultrasonic welding machine.lvlib" Type="Library" URL="../Libraries/ultrasonic welding machine/ultrasonic welding machine.lvlib"/>
