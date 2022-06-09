@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="image_src" type="image/jpeg" href="/images/logo.png" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Site Properities -->
+    <meta name="generator" content="Visual Studio 2015" />
+    <title>Chartli | Interactive Chart</title>
+    <meta name="description" content="Chartli Interactive Chart" />
+    <meta name="keywords" content="html5,chart,ui, library, framework, javascript,jquery,graphic,interactive" />
+    <link href="css/semantic.css" rel="stylesheet" />
+    <link href="css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="pieChart2" style="height:100%;"></div>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/chartli.js"></script>
+        <script type="text/javascript">
+
+        var chartliexample2 = echarts.init(document.getElementById('pieChart2'));
+
+        option = {
+            backgroundColor: '#fffff',
+            title: {
+                text: 'The Great Turtle Lion War',
+                subtext: '',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br />{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                top: 75,
+                data: ['Turtle Warriors', 'Lion Warriors', 'Zebras', 'Yaks', 'Humans'
+]
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    mark: { show: true },
+                    dataView: { show: true, readOnly: false },
+                    magicType: {
+                        show: true,
+                        type: ['pie', 'funnel'],
+                        option: {
+                            funnel: {
+                                x: '25%',
+                                width: '50%',
+                                funnelAlign: 'center',
+                                max: 1548
+                            }
+                        }
+                    },
+                    restore: { show: true },
+                    saveAsImage: { show: true }
+                }
+            },
+            color: ["#40DC00", "#FFA000", "#969696", "#FF0000", "#CC00FF"
+],
+            calculable: true,
+            series: [
+                {
+                    name: 'Access Sources',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: false
+                            },
+                            labelLine: {
+                                show: false
+                            }
+                        },
+                        emphasis: {
+                            label: {
+                                show: true,
+                                position: 'center',
+                                textStyle: {
+                                    fontSize: '15',
+                                    fontWeight: 'bold'
+                                }
+                            }
+                        }
+                    },
+                    data: [{ value: 125, name: 'Turtle Warriors' },
+ { value: 54, name: 'Lion Warriors' },
+ { value: 22, name: 'Zebras' },
+ { value: 42, name: 'Yaks' },
+ { value: 5, name: 'Humans' }]
+                }
+            ]
+        };
+
+        chartliexample2.setOption(option);
+    </script>
+    
+</body>
+</html>

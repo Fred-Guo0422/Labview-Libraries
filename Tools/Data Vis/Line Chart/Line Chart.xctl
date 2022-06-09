@@ -1,0 +1,76 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<XControl LVVersion="16008000">
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(]!!!*Q(C=\&gt;7R=2MR%!81N=?"5X&lt;A91P&lt;!FNA#^M#5Y6M96NA"R[WM#WQ"&lt;9A0ZYR'E?G!WPM1$AN&gt;@S(!ZZQG&amp;0%VLZ'@)H8:_X\&lt;^P(^7@8H\4Y;"`NX\;8JZPUX@@MJXC]C.3I6K5S(F/^DHTE)R`ZS%@?]J;XP/5N&lt;XH*3V\SEJ?]Z#F0?=J4HP+5&lt;Y=]Z#%0/&gt;+9@%QU"BU$D-YI-4[':XC':XB]D?%:HO%:HO(2*9:H?):H?)&lt;(&lt;4%]QT-]QT-]BNIEMRVSHO%R@$20]T20]T30+;.Z'K".VA:OAW"%O^B/GK&gt;ZGM&gt;J.%`T.%`T.)`,U4T.UTT.UTROW6;F.]XDE0-9*IKH?)KH?)L(U&amp;%]R6-]R6-]JIPC+:[#+"/7Q2'CX&amp;1[F#`&amp;5TR_2@%54`%54`'YN$WBWF&lt;GI8E==J\E3:\E3:\E-51E4`)E4`)EDW%D?:)H?:)H?5Q6S:-]S:-A;6,42RIMX:A[J3"Z`'S\*&lt;?HV*MENS.C&lt;&gt;Z9GT,7:IOVC7*NDFA00&gt;&lt;$D0719CV_L%7.N6CR&amp;C(7(R=,(1M4;Z*9.T][RNXH46X62:X632X61?X6\H(L8_ZYP^`D&gt;LP&amp;^8K.S_53Z`-Z4K&gt;4()`(/"Q/M&gt;`P9\@&lt;P&lt;U'PDH?8AA`XUMPTP_EXOF`[8`Q&lt;IT0]?OYVOA(5/(_Z!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
+	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.XClass.Flags" Type="Int">0</Property>
+	<Property Name="NI.XItem.DeclaredLeakProof" Type="Bool">false</Property>
+	<Property Name="NI.XItem.Express" Type="Bool">false</Property>
+	<Property Name="NI.XItem.Name" Type="Str">XControl 1</Property>
+	<Property Name="NI.XItem.SupportsFatalErrorOut" Type="Bool">false</Property>
+	<Item Name="js" Type="Folder">
+		<Item Name="asset" Type="Folder">
+			<Item Name="ico" Type="Folder">
+				<Item Name="apple.png" Type="Document" URL="../js/asset/ico/apple.png"/>
+				<Item Name="avacado.png" Type="Document" URL="../js/asset/ico/avacado.png"/>
+				<Item Name="banana.png" Type="Document" URL="../js/asset/ico/banana.png"/>
+				<Item Name="cherry.png" Type="Document" URL="../js/asset/ico/cherry.png"/>
+				<Item Name="coco.png" Type="Document" URL="../js/asset/ico/coco.png"/>
+				<Item Name="garnet.png" Type="Document" URL="../js/asset/ico/garnet.png"/>
+				<Item Name="grape.png" Type="Document" URL="../js/asset/ico/grape.png"/>
+				<Item Name="lemon.png" Type="Document" URL="../js/asset/ico/lemon.png"/>
+				<Item Name="pear.png" Type="Document" URL="../js/asset/ico/pear.png"/>
+				<Item Name="plum.png" Type="Document" URL="../js/asset/ico/plum.png"/>
+				<Item Name="watermelon.png" Type="Document" URL="../js/asset/ico/watermelon.png"/>
+			</Item>
+			<Item Name="car.png" Type="Document" URL="../js/asset/car.png"/>
+			<Item Name="cup.svg" Type="Document" URL="../js/asset/cup.svg"/>
+			<Item Name="facebook.png" Type="Document" URL="../js/asset/facebook.png"/>
+			<Item Name="panda.png" Type="Document" URL="../js/asset/panda.png"/>
+			<Item Name="phone.svg" Type="Document" URL="../js/asset/phone.svg"/>
+			<Item Name="snapchat.png" Type="Document" URL="../js/asset/snapchat.png"/>
+			<Item Name="twitter.png" Type="Document" URL="../js/asset/twitter.png"/>
+			<Item Name="whatsapp.png" Type="Document" URL="../js/asset/whatsapp.png"/>
+			<Item Name="wmelon.png" Type="Document" URL="../js/asset/wmelon.png"/>
+		</Item>
+		<Item Name="css" Type="Folder">
+			<Item Name="demo.css" Type="Document" URL="../js/css/demo.css"/>
+			<Item Name="semantic.css" Type="Document" URL="../js/css/semantic.css"/>
+			<Item Name="semantic.min.css" Type="Document" URL="../js/css/semantic.min.css"/>
+		</Item>
+		<Item Name="data" Type="Folder">
+			<Item Name="dataTool.min.js" Type="Document" URL="../js/data/dataTool.min.js"/>
+		</Item>
+		<Item Name="img" Type="Folder">
+			<Item Name="favicon-16x16.png" Type="Document" URL="../js/img/favicon-16x16.png"/>
+			<Item Name="favicon.ico" Type="Document" URL="../js/img/favicon.ico"/>
+		</Item>
+		<Item Name="js" Type="Folder">
+			<Item Name="bootstrap.js" Type="Document" URL="../js/js/bootstrap.js"/>
+			<Item Name="bootstrap.min.js" Type="Document" URL="../js/js/bootstrap.min.js"/>
+			<Item Name="chartli.js" Type="Document" URL="../js/js/chartli.js"/>
+			<Item Name="jquery-2.1.4.min.js" Type="Document" URL="../js/js/jquery-2.1.4.min.js"/>
+			<Item Name="liquidfill.js" Type="Document" URL="../js/js/liquidfill.js"/>
+			<Item Name="semantic.js" Type="Document" URL="../js/js/semantic.js"/>
+			<Item Name="semantic.min.js" Type="Document" URL="../js/js/semantic.min.js"/>
+			<Item Name="wordcloud.js" Type="Document" URL="../js/js/wordcloud.js"/>
+		</Item>
+		<Item Name="linechart.html" Type="Document" URL="../js/linechart.html"/>
+	</Item>
+	<Item Name="Supporting VIs" Type="Folder">
+		<Item Name="Update HTML File.vi" Type="VI" URL="../Supporting VIs/Update HTML File.vi"/>
+	</Item>
+	<Item Name="Data Line Chart.ctl" Type="Ability VI" URL="../Data Line Chart.ctl">
+		<Property Name="NI.XItem.Name" Type="Str">Data</Property>
+	</Item>
+	<Item Name="Facade Line Chart.vi" Type="Ability VI" URL="../Facade Line Chart.vi">
+		<Property Name="NI.XItem.Name" Type="Str">Facade</Property>
+	</Item>
+	<Item Name="Init Line Chart.vi" Type="Ability VI" URL="../Init Line Chart.vi">
+		<Property Name="NI.XItem.Name" Type="Str">Init</Property>
+	</Item>
+	<Item Name="State Line Chart.ctl" Type="Ability VI" URL="../State Line Chart.ctl">
+		<Property Name="NI.XItem.Name" Type="Str">State</Property>
+	</Item>
+</XControl>

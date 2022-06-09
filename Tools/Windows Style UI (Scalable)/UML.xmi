@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmi:version="2.1">
+	<xmi:Documentation contact="https://opengds.github.io/" exporter="GDS UML Modeller" exporterVersion="1.0"/>
+ <uml:Model name="UML" xmi:id="Model_UML">
+  <packagedElement xmi:type="uml:Class" xmi:id="id_class_0" name="<<ACTOR>>
+UI Controller" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_1" general="id_class_1"/>
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_0_attribute_0" name="Occupied Area" aggregation="none" type="id_DataType_Cluster" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_0_attribute_1" name="Stop Event" aggregation="none" type="id_DataType_RefNum" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_0_attribute_2" name="Close Panel Registry" aggregation="composite" type="id_class_4" visibility="private">
+<association xmi:idref="id_ass_0"/>
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_0" name="Set Stop Event" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_1" name="Register Close Panel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_2" name="Unregister Close Panel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_3" name="Broadcast Close Panel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_4" name="Hide Subpanel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_5" name="Hide Subpanels" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_6" name="Initialize Subpanels" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_7" name="Register Data" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_8" name="Stop UI" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_9" name="Update Occupied Area" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_10" name="Move Subpanel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_11" name="Register Cancel Button Text from Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_12" name="Register Cancel Button Text from Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_13" name="Register Cancel Button Text from Waiting Dialog View" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_14" name="Register Message from Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_15" name="Register Message from Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_16" name="Register Message from Waiting Dialog View" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_17" name="Register OK Button Text from Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_18" name="Register OK Button Text from Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_19" name="Register OK Button Visible from Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_20" name="Register OK Button Visible from Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_21" name="Register OK Button Visible from Waiting Dialog View" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_22" name="Register Cancel SAM from Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_23" name="Register Cancel SAM from Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_24" name="Register Cancel SAM from Waiting Dialog View" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_25" name="Register Cancel to Message Dialog Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_26" name="Register OK SAM from Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_27" name="Register OK SAM from Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_28" name="Register OK to Message Dialog Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_29" name="Register Cancel Button Pressed to Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_30" name="Register Print Button Pressed to Print Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_31" name="Register Close Panel to Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_32" name="Register Show Dialog to Settings Model" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_0_method_33" name="Register Wait from Print Model" visibility="private">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_1" name="<<ACTOR>>
+View Controller" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_2" general="id_class_2"/>
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_1_attribute_0" name="Subpanel Reference" aggregation="none" type="id_DataType_Variant" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_1_attribute_1" name="Splitter References" aggregation="none" type="id_DataType_Variant" visibility="private">
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_0" name="Object" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_1" name="Insert Subpanel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_2" name="Move Splitter" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_3" name="Move Subpanel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_4" name="Remove Subpanel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_5" name="Set Splitter" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_6" name="Set Subpanel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_7" name="Stop Core" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_8" name="Get All Subpanels" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_9" name="Get Subpanel Size" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_10" name="Get Subpanel" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_1_method_11" name="Set Subpanel Size" visibility="protected">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_2" name="<<ACTOR>>
+Abstract Controller" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_3" general="id_class_3"/>
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_2_attribute_0" name="Model Enqueuer Map" aggregation="none" type="id_DataType_Variant" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_2_attribute_1" name="View Enqueuer Map" aggregation="none" type="id_DataType_Variant" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_2_attribute_2" name="Control Enqueuer Map" aggregation="none" type="id_DataType_Variant" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_2_attribute_3" name="View Reference Map" aggregation="none" type="id_DataType_Variant" visibility="private">
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_2_method_0" name="Get Model Enqueuer" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_2_method_1" name="Get View Enqueuer" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_2_method_2" name="Launch Model" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_2_method_3" name="Launch View" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_2_method_4" name="Set View Reference" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_2_method_5" name="Get View Reference" visibility="protected">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_3" name="<<ACTOR>>
+Actor" visibility="public">
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_3_attribute_0" name="Self-To-Caller Enqueuer" aggregation="none" type="id_class_6" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_3_attribute_1" name="Send-To-Self Enqueuer" aggregation="none" visibility="private">
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_3_attribute_2" name="Nested Actors" aggregation="none" type="id_class_6" visibility="private">
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_0" name="Handle Last Ack" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_1" name="Init Check" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_2" name="Init Queues" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_3" name="Launch Nested Actor Friend Wrapper" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_4" name="Launch" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_5" name="Launch Root" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_6" name="Actor" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_7" name="Record Nested" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_8" name="Stop" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_9" name="Count Actors" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_10" name="Launch Actor Core" visibility="private">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_11" name="Core" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_12" name="Stop Core" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_13" name="Handle Last Ack Core" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_14" name="Read Self Enqueuer" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_15" name="Read Caller Enqueuer" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_16" name="Receive Message" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_17" name="Handle Error" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_18" name="Pre Launch Init" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_19" name="Substitute" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_20" name="Send Launch Nested Actor Msg" visibility="protected">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_3_method_21" name="Launch Nested" visibility="protected">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_4" name="Actor Register" visibility="public">
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_4_attribute_0" name="Actor Enqueuers" aggregation="composite" type="id_class_6" visibility="private">
+<association xmi:idref="id_ass_1"/>
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_4_attribute_1" name="Data Messages" aggregation="composite" type="id_class_5" visibility="private">
+<association xmi:idref="id_ass_2"/>
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_4_method_0" name="Get Data Messages" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_4_method_1" name="Broadcast Data Message" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_4_method_2" name="Register Actor" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_4_method_3" name="Unregister Actor" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_5" name="Data Message" visibility="public">
+
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_6" name="Message Enqueuer" visibility="public">
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_6_attribute_0" name="Priority Queue" aggregation="none" visibility="private">
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_6_method_0" name="Init from Existing Queue" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_6_method_1" name="Enqueue Critical" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_6_method_2" name="Enqueue" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_6_method_3" name="Equals Not A Refnum" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_7" name="Abstract Close Panel Msg" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_5" general="id_class_5"/>
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_7_attribute_0" name="Close Panel" aggregation="none" type="id_DataType_BOOL" visibility="private">
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_7_method_0" name="Get Close Panel" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_7_method_1" name="Set Close Panel" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_8" name="Registration Message" visibility="public">
+<ownedAttribute xmi:type="uml:Property" xmi:id="id_8_attribute_0" name="Actor Enqueuer" aggregation="composite" type="id_class_6" visibility="private">
+<association xmi:idref="id_ass_3"/>
+			</ownedAttribute>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="id_8_attribute_1" name="Data Message" aggregation="composite" type="id_class_5" visibility="private">
+<association xmi:idref="id_ass_4"/>
+			</ownedAttribute>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_8_method_0" name="Get Actor Enqueuer" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_8_method_1" name="Get Data Message" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_8_method_2" name="Set Actor Enqueuer" visibility="public">
+			</ownedOperation>
+			<ownedOperation  xmi:type="uml:Operation" xmi:id="id_8_method_3" name="Set Data Message" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_9" name="Concrete Message" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_9_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_10" name="Register Message" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_10_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_11" name="Register Message" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_11_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_12" name="Register Message" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_12_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_13" name="Concrete Cancel SAM" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_13_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_14" name="Register Cancel SAM" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_14_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_15" name="Register Cancel SAM" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_15_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_16" name="Register Cancel SAM" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_16_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_17" name="Concrete Cancel Msg" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_17_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_18" name="Register Cancel" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_18_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_19" name="Concrete OK SAM" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_19_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_20" name="Register OK SAM" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_20_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_21" name="Register OK SAM" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_21_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_22" name="Concrete OK Msg" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_22_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_23" name="Register OK" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_23_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_24" name="Concrete Cancel Msg" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_24_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_25" name="Register Cancel" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_25_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_26" name="Concrete Print Msg" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_26_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_27" name="Register Print" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_27_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_28" name="Register Close Panel" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_28_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_29" name="Register Show Dialog" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_29_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_30" name="Register Wait" visibility="public">
+			<generalization xmi:type="uml:Generalization" xmi:id="id_generalization_8" general="id_class_8"/>
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_30_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="id_class_31" name="Concrete Wait Msg" visibility="public">
+<ownedOperation  xmi:type="uml:Operation" xmi:id="id_31_method_0" name="Do" visibility="public">
+			</ownedOperation>
+</packagedElement>
+	<packagedElement xmi:type="uml:DataType" xmi:id="id_DataType_Cluster" name="Cluster" visibility="public"/>
+	<packagedElement xmi:type="uml:DataType" xmi:id="id_DataType_RefNum" name="RefNum" visibility="public"/>
+	<packagedElement xmi:type="uml:DataType" xmi:id="id_DataType_LabVIEW Class" name="LabVIEW Class" visibility="public"/>
+	<packagedElement xmi:type="uml:DataType" xmi:id="id_DataType_Variant" name="Variant" visibility="public"/>
+	<packagedElement xmi:type="uml:DataType" xmi:id="id_DataType_BOOL" name="BOOL" visibility="public"/>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_0" visibility="public">
+			<memberEnd xmi:idref="id_0_attribute_2"/>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property_0" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_0"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="id_ass_property_0"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_1" visibility="public">
+			<memberEnd xmi:idref="id_4_attribute_0"/>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property_1" visibility="protected" type="id_class_4">
+				<association xmi:idref="id_ass_1"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="id_ass_property_1"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_2" visibility="public">
+			<memberEnd xmi:idref="id_4_attribute_1"/>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property_2" visibility="protected" type="id_class_4">
+				<association xmi:idref="id_ass_2"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="id_ass_property_2"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_3" visibility="public">
+			<memberEnd xmi:idref="id_8_attribute_0"/>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property_3" visibility="protected" type="id_class_8">
+				<association xmi:idref="id_ass_3"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="id_ass_property_3"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_4" visibility="public">
+			<memberEnd xmi:idref="id_8_attribute_1"/>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property_4" visibility="protected" type="id_class_8">
+				<association xmi:idref="id_ass_4"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="id_ass_property_4"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_5" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_5" name="" visibility="protected" type="id_class_5">
+				<association xmi:idref="id_ass_5"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_5" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_5"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_5"/>
+			<memberEnd xmi:idref="id_ass_property2_5"/>
+			<memberEnd xmi:idref="id_ass_property_5"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_6" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_6" name="" visibility="protected" type="id_class_7">
+				<association xmi:idref="id_ass_6"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_6" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_6"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_6"/>
+			<memberEnd xmi:idref="id_ass_property2_6"/>
+			<memberEnd xmi:idref="id_ass_property_6"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_7" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_7" name="" visibility="protected" type="id_class_8">
+				<association xmi:idref="id_ass_7"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_7" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_7"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_7"/>
+			<memberEnd xmi:idref="id_ass_property2_7"/>
+			<memberEnd xmi:idref="id_ass_property_7"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_8" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_8" name="" visibility="protected" type="id_class_9">
+				<association xmi:idref="id_ass_8"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_8" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_8"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_8"/>
+			<memberEnd xmi:idref="id_ass_property2_8"/>
+			<memberEnd xmi:idref="id_ass_property_8"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_9" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_9" name="" visibility="protected" type="id_class_10">
+				<association xmi:idref="id_ass_9"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_9" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_9"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_9"/>
+			<memberEnd xmi:idref="id_ass_property2_9"/>
+			<memberEnd xmi:idref="id_ass_property_9"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_10" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_10" name="" visibility="protected" type="id_class_11">
+				<association xmi:idref="id_ass_10"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_10" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_10"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_10"/>
+			<memberEnd xmi:idref="id_ass_property2_10"/>
+			<memberEnd xmi:idref="id_ass_property_10"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_11" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_11" name="" visibility="protected" type="id_class_12">
+				<association xmi:idref="id_ass_11"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_11" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_11"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_11"/>
+			<memberEnd xmi:idref="id_ass_property2_11"/>
+			<memberEnd xmi:idref="id_ass_property_11"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_12" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_12" name="" visibility="protected" type="id_class_13">
+				<association xmi:idref="id_ass_12"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_12" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_12"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_12"/>
+			<memberEnd xmi:idref="id_ass_property2_12"/>
+			<memberEnd xmi:idref="id_ass_property_12"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_13" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_13" name="" visibility="protected" type="id_class_14">
+				<association xmi:idref="id_ass_13"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_13" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_13"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_13"/>
+			<memberEnd xmi:idref="id_ass_property2_13"/>
+			<memberEnd xmi:idref="id_ass_property_13"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_14" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_14" name="" visibility="protected" type="id_class_15">
+				<association xmi:idref="id_ass_14"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_14" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_14"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_14"/>
+			<memberEnd xmi:idref="id_ass_property2_14"/>
+			<memberEnd xmi:idref="id_ass_property_14"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_15" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_15" name="" visibility="protected" type="id_class_16">
+				<association xmi:idref="id_ass_15"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_15" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_15"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_15"/>
+			<memberEnd xmi:idref="id_ass_property2_15"/>
+			<memberEnd xmi:idref="id_ass_property_15"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_16" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_16" name="" visibility="protected" type="id_class_17">
+				<association xmi:idref="id_ass_16"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_16" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_16"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_16"/>
+			<memberEnd xmi:idref="id_ass_property2_16"/>
+			<memberEnd xmi:idref="id_ass_property_16"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_17" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_17" name="" visibility="protected" type="id_class_18">
+				<association xmi:idref="id_ass_17"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_17" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_17"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_17"/>
+			<memberEnd xmi:idref="id_ass_property2_17"/>
+			<memberEnd xmi:idref="id_ass_property_17"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_18" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_18" name="" visibility="protected" type="id_class_19">
+				<association xmi:idref="id_ass_18"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_18" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_18"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_18"/>
+			<memberEnd xmi:idref="id_ass_property2_18"/>
+			<memberEnd xmi:idref="id_ass_property_18"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_19" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_19" name="" visibility="protected" type="id_class_20">
+				<association xmi:idref="id_ass_19"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_19" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_19"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_19"/>
+			<memberEnd xmi:idref="id_ass_property2_19"/>
+			<memberEnd xmi:idref="id_ass_property_19"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_20" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_20" name="" visibility="protected" type="id_class_21">
+				<association xmi:idref="id_ass_20"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_20" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_20"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_20"/>
+			<memberEnd xmi:idref="id_ass_property2_20"/>
+			<memberEnd xmi:idref="id_ass_property_20"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_21" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_21" name="" visibility="protected" type="id_class_22">
+				<association xmi:idref="id_ass_21"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_21" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_21"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_21"/>
+			<memberEnd xmi:idref="id_ass_property2_21"/>
+			<memberEnd xmi:idref="id_ass_property_21"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_22" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_22" name="" visibility="protected" type="id_class_23">
+				<association xmi:idref="id_ass_22"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_22" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_22"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_22"/>
+			<memberEnd xmi:idref="id_ass_property2_22"/>
+			<memberEnd xmi:idref="id_ass_property_22"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_23" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_23" name="" visibility="protected" type="id_class_24">
+				<association xmi:idref="id_ass_23"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_23" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_23"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_23"/>
+			<memberEnd xmi:idref="id_ass_property2_23"/>
+			<memberEnd xmi:idref="id_ass_property_23"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_24" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_24" name="" visibility="protected" type="id_class_25">
+				<association xmi:idref="id_ass_24"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_24" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_24"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_24"/>
+			<memberEnd xmi:idref="id_ass_property2_24"/>
+			<memberEnd xmi:idref="id_ass_property_24"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_25" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_25" name="" visibility="protected" type="id_class_26">
+				<association xmi:idref="id_ass_25"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_25" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_25"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_25"/>
+			<memberEnd xmi:idref="id_ass_property2_25"/>
+			<memberEnd xmi:idref="id_ass_property_25"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_26" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_26" name="" visibility="protected" type="id_class_27">
+				<association xmi:idref="id_ass_26"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_26" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_26"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_26"/>
+			<memberEnd xmi:idref="id_ass_property2_26"/>
+			<memberEnd xmi:idref="id_ass_property_26"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_27" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_27" name="" visibility="protected" type="id_class_28">
+				<association xmi:idref="id_ass_27"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_27" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_27"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_27"/>
+			<memberEnd xmi:idref="id_ass_property2_27"/>
+			<memberEnd xmi:idref="id_ass_property_27"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_28" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_28" name="" visibility="protected" type="id_class_29">
+				<association xmi:idref="id_ass_28"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_28" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_28"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_28"/>
+			<memberEnd xmi:idref="id_ass_property2_28"/>
+			<memberEnd xmi:idref="id_ass_property_28"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_29" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_29" name="" visibility="protected" type="id_class_30">
+				<association xmi:idref="id_ass_29"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_29" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_29"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_29"/>
+			<memberEnd xmi:idref="id_ass_property2_29"/>
+			<memberEnd xmi:idref="id_ass_property_29"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_30" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_30" name="" visibility="protected" type="id_class_31">
+				<association xmi:idref="id_ass_30"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_30" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_30"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_30"/>
+			<memberEnd xmi:idref="id_ass_property2_30"/>
+			<memberEnd xmi:idref="id_ass_property_30"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_31" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_31" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_31"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_31" name="" visibility="protected" type="id_class_9">
+				<association xmi:idref="id_ass_31"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_31"/>
+			<memberEnd xmi:idref="id_ass_property2_31"/>
+			<memberEnd xmi:idref="id_ass_property_31"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_32" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_32" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_32"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_32" name="" visibility="protected" type="id_class_10">
+				<association xmi:idref="id_ass_32"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_32"/>
+			<memberEnd xmi:idref="id_ass_property2_32"/>
+			<memberEnd xmi:idref="id_ass_property_32"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_33" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_33" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_33"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_33" name="" visibility="protected" type="id_class_11">
+				<association xmi:idref="id_ass_33"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_33"/>
+			<memberEnd xmi:idref="id_ass_property2_33"/>
+			<memberEnd xmi:idref="id_ass_property_33"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_34" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_34" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_34"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_34" name="" visibility="protected" type="id_class_12">
+				<association xmi:idref="id_ass_34"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_34"/>
+			<memberEnd xmi:idref="id_ass_property2_34"/>
+			<memberEnd xmi:idref="id_ass_property_34"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_35" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_35" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_35"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_35" name="" visibility="protected" type="id_class_13">
+				<association xmi:idref="id_ass_35"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_35"/>
+			<memberEnd xmi:idref="id_ass_property2_35"/>
+			<memberEnd xmi:idref="id_ass_property_35"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_36" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_36" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_36"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_36" name="" visibility="protected" type="id_class_14">
+				<association xmi:idref="id_ass_36"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_36"/>
+			<memberEnd xmi:idref="id_ass_property2_36"/>
+			<memberEnd xmi:idref="id_ass_property_36"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_37" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_37" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_37"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_37" name="" visibility="protected" type="id_class_15">
+				<association xmi:idref="id_ass_37"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_37"/>
+			<memberEnd xmi:idref="id_ass_property2_37"/>
+			<memberEnd xmi:idref="id_ass_property_37"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_38" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_38" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_38"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_38" name="" visibility="protected" type="id_class_16">
+				<association xmi:idref="id_ass_38"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_38"/>
+			<memberEnd xmi:idref="id_ass_property2_38"/>
+			<memberEnd xmi:idref="id_ass_property_38"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_39" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_39" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_39"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_39" name="" visibility="protected" type="id_class_17">
+				<association xmi:idref="id_ass_39"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_39"/>
+			<memberEnd xmi:idref="id_ass_property2_39"/>
+			<memberEnd xmi:idref="id_ass_property_39"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_40" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_40" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_40"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_40" name="" visibility="protected" type="id_class_18">
+				<association xmi:idref="id_ass_40"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_40"/>
+			<memberEnd xmi:idref="id_ass_property2_40"/>
+			<memberEnd xmi:idref="id_ass_property_40"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_41" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_41" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_41"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_41" name="" visibility="protected" type="id_class_19">
+				<association xmi:idref="id_ass_41"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_41"/>
+			<memberEnd xmi:idref="id_ass_property2_41"/>
+			<memberEnd xmi:idref="id_ass_property_41"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_42" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_42" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_42"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_42" name="" visibility="protected" type="id_class_20">
+				<association xmi:idref="id_ass_42"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_42"/>
+			<memberEnd xmi:idref="id_ass_property2_42"/>
+			<memberEnd xmi:idref="id_ass_property_42"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_43" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_43" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_43"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_43" name="" visibility="protected" type="id_class_21">
+				<association xmi:idref="id_ass_43"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_43"/>
+			<memberEnd xmi:idref="id_ass_property2_43"/>
+			<memberEnd xmi:idref="id_ass_property_43"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_44" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_44" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_44"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_44" name="" visibility="protected" type="id_class_22">
+				<association xmi:idref="id_ass_44"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_44"/>
+			<memberEnd xmi:idref="id_ass_property2_44"/>
+			<memberEnd xmi:idref="id_ass_property_44"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_45" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_45" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_45"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_45" name="" visibility="protected" type="id_class_23">
+				<association xmi:idref="id_ass_45"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_45"/>
+			<memberEnd xmi:idref="id_ass_property2_45"/>
+			<memberEnd xmi:idref="id_ass_property_45"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_46" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_46" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_46"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_46" name="" visibility="protected" type="id_class_24">
+				<association xmi:idref="id_ass_46"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_46"/>
+			<memberEnd xmi:idref="id_ass_property2_46"/>
+			<memberEnd xmi:idref="id_ass_property_46"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_47" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_47" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_47"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_47" name="" visibility="protected" type="id_class_25">
+				<association xmi:idref="id_ass_47"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_47"/>
+			<memberEnd xmi:idref="id_ass_property2_47"/>
+			<memberEnd xmi:idref="id_ass_property_47"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_48" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_48" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_48"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_48" name="" visibility="protected" type="id_class_26">
+				<association xmi:idref="id_ass_48"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_48"/>
+			<memberEnd xmi:idref="id_ass_property2_48"/>
+			<memberEnd xmi:idref="id_ass_property_48"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_49" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_49" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_49"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_49" name="" visibility="protected" type="id_class_27">
+				<association xmi:idref="id_ass_49"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_49"/>
+			<memberEnd xmi:idref="id_ass_property2_49"/>
+			<memberEnd xmi:idref="id_ass_property_49"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_50" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_50" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_50"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_50" name="" visibility="protected" type="id_class_28">
+				<association xmi:idref="id_ass_50"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_50"/>
+			<memberEnd xmi:idref="id_ass_property2_50"/>
+			<memberEnd xmi:idref="id_ass_property_50"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_51" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_51" name="" visibility="protected" type="id_class_0">
+				<association xmi:idref="id_ass_51"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_51" name="" visibility="protected" type="id_class_28">
+				<association xmi:idref="id_ass_51"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_51"/>
+			<memberEnd xmi:idref="id_ass_property2_51"/>
+			<memberEnd xmi:idref="id_ass_property_51"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_52" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_52" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_52"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_52" name="" visibility="protected" type="id_class_29">
+				<association xmi:idref="id_ass_52"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_52"/>
+			<memberEnd xmi:idref="id_ass_property2_52"/>
+			<memberEnd xmi:idref="id_ass_property_52"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_53" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_53" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_53"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_53" name="" visibility="protected" type="id_class_30">
+				<association xmi:idref="id_ass_53"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_53"/>
+			<memberEnd xmi:idref="id_ass_property2_53"/>
+			<memberEnd xmi:idref="id_ass_property_53"/>
+		</ownedMember>		
+<ownedMember xmi:type="uml:Association" xmi:id="id_ass_54" visibility="public">
+			<navigableOwnedEnd xmi:type="uml:Property" xmi:id="id_ass_property_54" name="" visibility="protected" type="id_class_3">
+				<association xmi:idref="id_ass_54"/>
+			</navigableOwnedEnd>
+			<ownedEnd xmi:type="uml:Property" xmi:id="id_ass_property2_54" name="" visibility="protected" type="id_class_31">
+				<association xmi:idref="id_ass_54"/>
+			</ownedEnd>
+			<ownedEnd xmi:idref="id_ass_property_54"/>
+			<memberEnd xmi:idref="id_ass_property2_54"/>
+			<memberEnd xmi:idref="id_ass_property_54"/>
+		</ownedMember>
+ 	</uml:Model>
+</xmi:XMI>
