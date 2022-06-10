@@ -6,7 +6,7 @@
 
 ### Libraries
 
- - aumt8852B
+ - 这里是列表文本 aumt8852B
  - CMESAPI
  - HslCommunication
  - LabVIEW_InstrDriver_forLJ-X8000A_64bit_ver1_0_0_0
