@@ -1,6 +1,6 @@
-# Labview General utility tool
+## Labview General utility tool
 
-For more information on available extensions, see [the documentation below](#extensions).
+
 
 ## Installation
 
@@ -8,24 +8,10 @@ For more information on available extensions, see [the documentation below](#ext
 
 ## Usage
 
-### Converting to HTML
-
-
-### Generating a document
-
-
-#### Example: walking the AST
-
-
-# parse the files specified on the command line
-
-# Walk tree and print out URLs for links
-
-# Capitalize all regular text in headers
-
-# Transform links to regular text
-
-### Creating a custom renderer
+#### Libraries
+#### Tools
+#### Vision
+#### Creating a custom renderer
 
 ## Options
 
