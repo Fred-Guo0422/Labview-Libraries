@@ -1,289 +1,254 @@
-# Labview General utility tool
-# CommonMarker
+## Labview General utility tool
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-![Build Status](https://github.com/gjtorikian/commonmarker/workflows/CI/badge.svg) [![Gem Version](https://badge.fury.io/rb/commonmarker.svg)](http://badge.fury.io/rb/commonmarker)
 
-Ruby wrapper for [libcmark-gfm](https://github.com/github/cmark),
-GitHub's fork of the reference parser for CommonMark. It passes all of the C tests, and is therefore spec-complete. It also includes extensions to the CommonMark spec as documented in the [GitHub Flavored Markdown spec](http://github.github.com/gfm/), such as support for tables, strikethroughs, and autolinking.
 
-For more information on available extensions, see [the documentation below](#extensions).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Installation
 
-Add this line to your application's Gemfile:
 
-    gem 'commonmarker'
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-And then execute:
+  <h3 align="center">Best-README-Template</h3>
 
-    $ bundle
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</div>
 
-Or install it yourself as:
 
-    $ gem install commonmarker
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+
+Here's why:
+* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* You shouldn't be doing the same tasks over and over like creating a README from scratch
+* You should implement DRY principles to the rest of your life :smile:
+
+Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+
+Use the `BLANK_README.md` to get started.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [Vue.js](https://vuejs.org/)
+* [Angular](https://angular.io/)
+* [Svelte](https://svelte.dev/)
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
 ## Usage
 
-### Converting to HTML
-
-Call `render_html` on a string to convert it to HTML:
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-``` ruby
-require 'commonmarker'
-CommonMarker.render_html('Hi *there*', :DEFAULT)
-# <p>Hi <em>there</em></p>\n
-```
-
-The second argument is optional--[see below](#options) for more information.
-
-### Generating a document
-
-You can also parse a string to receive a `Document` node. You can then print that node to HTML, iterate over the children, and other fun node stuff. For example:
-
-``` ruby
-require 'commonmarker'
-
-doc = CommonMarker.render_doc('*Hello* world', :DEFAULT)
-puts(doc.to_html) # <p>Hi <em>there</em></p>\n
-
-doc.walk do |node|
-  puts node.type # [:document, :paragraph, :text, :emph, :text]
-end
-```
-
-The second argument is optional--[see below](#options) for more information.
-
-#### Example: walking the AST
-
-You can use `walk` or `each` to iterate over nodes:
-
-- `walk` will iterate on a node and recursively iterate on a node's children.
-- `each` will iterate on a node and its children, but no further.
-
-``` ruby
-require 'commonmarker'
-
-# parse the files specified on the command line
-doc = CommonMarker.render_doc("# The site\n\n [GitHub](https://www.github.com)")
-
-# Walk tree and print out URLs for links
-doc.walk do |node|
-  if node.type == :link
-    printf("URL = %s\n", node.url)
-  end
-end
-
-# Capitalize all regular text in headers
-doc.walk do |node|
-  if node.type == :header
-    node.each do |subnode|
-      if subnode.type == :text
-        subnode.string_content = subnode.string_content.upcase
-      end
-    end
-  end
-end
-
-# Transform links to regular text
-doc.walk do |node|
-  if node.type == :link
-    node.insert_before(node.first_child)
-    node.delete
-  end
-end
-```
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-### Creating a custom renderer
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You can also derive a class from CommonMarker's `HtmlRenderer` class. This produces slower output, but is far more customizable. For example:
 
-``` ruby
-class MyHtmlRenderer < CommonMarker::HtmlRenderer
-  def initialize
-    super
-    @headerid = 1
-  end
 
-  def header(node)
-    block do
-      out("<h", node.header_level, " id=\"", @headerid, "\">",
-               :children, "</h", node.header_level, ">")
-      @headerid += 1
-    end
-  end
-end
+<!-- ROADMAP -->
+## Roadmap
 
-myrenderer = MyHtmlRenderer.new
-puts myrenderer.render(doc)
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
 
-# Print any warnings to STDERR
-renderer.warnings.each do |w|
-  STDERR.write("#{w}\n")
-end
-```
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-## Options
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-CommonMarker accepts the same options that CMark does, as symbols. Note that there is a distinction in CMark for "parse" options and "render" options, which are represented in the tables below.
 
-### Parse options
 
-| Name                          | Description
-| ----------------------------- | -----------
-| `:DEFAULT`                    | The default parsing system.
-| `:SOURCEPOS`                  | Include source position in nodes
-| `:UNSAFE`                     | Allow raw/custom HTML and unsafe links.
-| `:VALIDATE_UTF8`              | Replace illegal sequences with the replacement character `U+FFFD`.
-| `:SMART`                      | Use smart punctuation (curly quotes, etc.).
-| `:LIBERAL_HTML_TAG`           | Support liberal parsing of inline HTML tags.
-| `:FOOTNOTES`                  | Parse footnotes.
-| `:STRIKETHROUGH_DOUBLE_TILDE` | Parse strikethroughs by double tildes (compatibility with [redcarpet](https://github.com/vmg/redcarpet))
+<!-- CONTRIBUTING -->
+## Contributing
 
-### Render options
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-| Name                             | Description                                                     |
-| ------------------               | -----------                                                     |
-| `:DEFAULT`                       | The default rendering system.                                   |
-| `:SOURCEPOS`                     | Include source position in rendered HTML.                       |
-| `:HARDBREAKS`                    | Treat `\n` as hardbreaks (by adding `<br/>`).                   |
-| `:UNSAFE`                        | Allow raw/custom HTML and unsafe links.                         |
-| `:NOBREAKS`                      | Translate `\n` in the source to a single whitespace.            |
-| `:VALIDATE_UTF8`                 | Replace illegal sequences with the replacement character `U+FFFD`. |
-| `:SMART`                         | Use smart punctuation (curly quotes, etc.).                     |
-| `:GITHUB_PRE_LANG`               | Use GitHub-style `<pre lang>` for fenced code blocks.           |
-| `:LIBERAL_HTML_TAG`              | Support liberal parsing of inline HTML tags.                    |
-| `:FOOTNOTES`                     | Render footnotes.                                               |
-| `:STRIKETHROUGH_DOUBLE_TILDE`    | Parse strikethroughs by double tildes (compatibility with [redcarpet](https://github.com/vmg/redcarpet)) |
-| `:TABLE_PREFER_STYLE_ATTRIBUTES` | Use `style` insted of `align` for table cells.                  |
-| `:FULL_INFO_STRING`              | Include full info strings of code blocks in separate attribute. |
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-### Passing options
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To apply a single option, pass it in as a symbol argument:
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-``` ruby
-CommonMarker.render_doc("\"Hello,\" said the spider.", :SMART)
-# <p>“Hello,” said the spider.</p>\n
-```
 
-To have multiple options applied, pass in an array of symbols:
 
-``` ruby
-CommonMarker.render_html("\"'Shelob' is my name.\"", [:HARDBREAKS, :SOURCEPOS])
-```
+<!-- LICENSE -->
+## License
 
-For more information on these options, see [the CMark documentation](https://git.io/v7nh1).
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-## Extensions
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Both `render_html` and `render_doc` take an optional third argument defining the extensions you want enabled as your CommonMark document is being processed. The documentation for these extensions are [defined in this spec](https://github.github.com/gfm/), and the rationale is provided [in this blog post](https://githubengineering.com/a-formal-spec-for-github-markdown/).
 
-The available extensions are:
 
-* `:table` - This provides support for tables.
-* `:tasklist` - This provides support for task list items.
-* `:strikethrough` - This provides support for strikethroughs.
-* `:autolink` - This provides support for automatically converting URLs to anchor tags.
-* `:tagfilter` - This escapes [several "unsafe" HTML tags](https://github.github.com/gfm/#disallowed-raw-html-extension-), causing them to not have any effect.
+<!-- CONTACT -->
+## Contact
 
-## Output formats
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Like CMark, CommonMarker can generate output in several formats: HTML, XML, plaintext, and commonmark are currently supported.
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-### HTML
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The default output format, HTML, will be generated when calling `to_html` or using `--to=html` on the command line.
 
-```ruby
-doc = CommonMarker.render_doc('*Hello* world!', :DEFAULT)
-puts(doc.to_html)
 
-<p><em>Hello</em> world!</p>
-```
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
-### XML
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-XML will be generated when calling `to_xml` or using `--to=xml` on the command line.
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
 
-```ruby
-doc = CommonMarker.render_doc('*Hello* world!', :DEFAULT)
-puts(doc.to_xml)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "CommonMark.dtd">
-<document xmlns="http://commonmark.org/xml/1.0">
-  <paragraph>
-    <emph>
-      <text xml:space="preserve">Hello</text>
-    </emph>
-    <text xml:space="preserve"> world!</text>
-  </paragraph>
-</document>
-```
 
-### Plaintext
 
-Plaintext will be generated when calling `to_plaintext` or using `--to=plaintext` on the command line.
-
-```ruby
-doc = CommonMarker.render_doc('*Hello* world!', :DEFAULT)
-puts(doc.to_plaintext)
-
-Hello world!
-```
-
-### Commonmark
-
-Commonmark will be generated when calling `to_commonmark` or using `--to=commonmark` on the command line.
-
-``` ruby
-text = <<-TEXT
-1. I am a numeric list.
-2. I continue the list.
-* Suddenly, an unordered list!
-* What fun!
-TEXT
-
-doc = CommonMarker.render_doc(text, :DEFAULT)
-puts(doc.to_commonmark)
-
-1.  I am a numeric list.
-2.  I continue the list.
-
-<!-- end list -->
-
-  - Suddenly, an unordered list\!
-  - What fun\!
-```
-
-## Developing locally
-
-After cloning the repo:
-
-```
-script/bootstrap
-bundle exec rake compile
-```
-
-If there were no errors, you're done! Otherwise, make sure to follow the CMark dependency instructions.
-
-## Benchmarks
-
-Some rough benchmarks:
-
-```
-$ bundle exec rake benchmark
-
-input size = 11063727 bytes
-
-redcarpet
-  0.070000   0.020000   0.090000 (  0.079641)
-github-markdown
-  0.070000   0.010000   0.080000 (  0.083535)
-commonmarker with to_html
-  0.100000   0.010000   0.110000 (  0.111947)
-commonmarker with ruby HtmlRenderer
-  1.830000   0.030000   1.860000 (  1.866203)
-kramdown
-  4.610000   0.070000   4.680000 (  4.678398)
-```
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
