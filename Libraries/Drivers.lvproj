@@ -12,7 +12,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Reader" Type="Folder">
-			<Item Name="UART.lvlib" Type="Library" URL="../Reader/UART/UART.lvlib"/>
+			<Item Name="Reader.lvlib" Type="Library" URL="../Reader/UART/Reader.lvlib"/>
+			<Item Name="Reader API.vi" Type="VI" URL="../Reader/Reader API.vi"/>
 		</Item>
 		<Item Name="UART" Type="Folder">
 			<Item Name="UART_With_Buffer.vi" Type="VI" URL="../UART/UART_With_Buffer.vi"/>
@@ -40,7 +41,9 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="relay.dll" Type="Document" URL="/C/Users/Fred Guo/Desktop/relay.dll"/>
+			<Item Name="Encode Command.vi" Type="VI" URL="../Reader/support/Encode Command.vi"/>
+			<Item Name="UART_With_Buffer.vi" Type="VI" URL="../Reader/UART/UART_With_Buffer.vi"/>
+			<Item Name="deconing.vi" Type="VI" URL="../Reader/support/deconing.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EventLogger" Type="Packed Library">

@@ -33,19 +33,16 @@
 				<Item Name="Text File Sink.lvclass" Type="LVClass" URL="../EventLogger.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/Text File Sink/Text File Sink.lvclass"/>
 			</Item>
 			<Item Name="HslCommunication.lvlib" Type="Library" URL="../HslCommunication.lvlib"/>
-			<Item Name="Logger Test" Type="VI" URL="../Logger Test"/>
 		</Item>
+		<Item Name="delta test.vi" Type="VI" URL="../Test/delta test.vi"/>
+		<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Composed Log.lvlib" Type="Library" URL="/&lt;vilib&gt;/gpm_packages/@cs/event-logger/Source/Composed Log/Composed Log.lvlib"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 			</Item>
-			<Item Name="Close Local Event Log.vi" Type="VI" URL="../../../../../builds/EventLog/EventLog.lvlibp/Close Local Event Log.vi"/>
-			<Item Name="Configuration.ctl" Type="VI" URL="../../../../../builds/EventLog/EventLog.lvlibp/1abvi3w/vi.lib/gpm_packages/@cs/event-logger/Source/Text File Sink/Configuration.ctl"/>
-			<Item Name="Initialize Local Log.vi" Type="VI" URL="../../../../../builds/EventLog/EventLog.lvlibp/Initialize Local Log.vi"/>
-			<Item Name="LogEvent.vi" Type="VI" URL="../../../../../builds/EventLog/EventLog.lvlibp/LogEvent.vi"/>
+			<Item Name="DelatModbusTcp.lvclass" Type="LVClass" URL="../DelatModbusTcp/DelatModbusTcp.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
