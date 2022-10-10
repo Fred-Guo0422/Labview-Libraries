@@ -1,0 +1,91 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<XControl LVVersion="9008000">
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">#1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+@!!!*Q(C=T:1RDB."%%7`%:9)3(Q$Z$V#89$!&amp;X$A+^16H$JU!'1/+FUNC55'"-B#WA.5QA&amp;]!_1L$+^\?MSS+^OM&amp;A(&gt;7T0O`[OLXP;-2KLDB@2=KUND@(:5`_KK8QTXR`F&amp;P2O0^5`7`EP_U`G@&gt;HZH"X\8&gt;8W-R^X023^5@VS.]:$3,]90`:*2`70/0@`%`LP^DXY4,`.@'DI\@M/P2&gt;KF+!^^$&gt;;1=X_`"L^EHNN`RD`:`R,`"@`S];W[@TSEE64O8:&gt;%%%[9CN5F?K)H?K)H?K)(?K!(?K!(?K!\OK-\OK-\OK-&lt;OK%&lt;OK%&lt;OK(8C3ZUI1O&gt;5UG;*YW3IEG"*"E5*:?%*_&amp;*?")?FEJY%J[%*_&amp;*?%B2QJ0Q*$Q*4],$.C5]#5`#E`!E0*3K*&amp;EH/DQ*$_56]!1]!5`!%`$15A&amp;0!"!U#QI(2="19!9`!J[!*_$BJQ+?A#@A#8A#(GQ&amp;0!&amp;0Q"0Q"$RMK;=3F;:-&gt;(AI)Y@(Y8&amp;Y("[(B^*S?"Q?B]@B=8BI*Y@(Y8%AH):/=2$E&lt;()3H)8$Y`"QE]0D]$A]$I`$AV7@E.?4+42FIM.D]"A]"I`"9`"11A;0Q70Q'$Q'$W6F]"A]"I`"9`$13A;0Q70Q'#"'5^L,+':M.*)-Q?$BL\YN6J^36"+L5WIPL^J,K@;SK&lt;V%;C_(WE.8?ZBK$UHN].5/6?WQV!Z"\:^4AV;$57OCNLEE[M"V4_S),&lt;%GFM3#G"&amp;49F+W`O(%Q_'A`8[PX7[H\8;L^8KNZ8+JR7+BW7SG[83KS72S`&amp;K^9P:D.(S8_%#.XLTMY[0VM&lt;L^.1:^S#N\&gt;O`XX[Y`&lt;?&lt;8(W*_@&lt;/:\WYW_[)0.5N]`@Z[^0H&gt;\?D,7_YF7!^?`VX[(\[.?K&lt;_@DSD(Y"H5.5!!!!!</Property>
+	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
+	<Property Name="NI.XClass.Flags" Type="Int">0</Property>
+	<Property Name="NI.XItem.DeclaredLeakProof" Type="Bool">false</Property>
+	<Property Name="NI.XItem.Express" Type="Bool">false</Property>
+	<Property Name="NI.XItem.Name" Type="Str">XControl 1</Property>
+	<Property Name="NI.XItem.SupportsFatalErrorOut" Type="Bool">false</Property>
+	<Item Name="Ability" Type="Folder">
+		<Item Name="Data_RCM.ctl" Type="Ability VI" URL="../XControl/Ability/Data_RCM.ctl">
+			<Property Name="NI.XItem.Name" Type="Str">Data</Property>
+		</Item>
+		<Item Name="State_RCM.ctl" Type="Ability VI" URL="../XControl/Ability/State_RCM.ctl">
+			<Property Name="NI.XItem.Name" Type="Str">State</Property>
+		</Item>
+		<Item Name="Facade_RCM.vi" Type="Ability VI" URL="../XControl/Ability/Facade_RCM.vi">
+			<Property Name="NI.XItem.Name" Type="Str">Facade</Property>
+		</Item>
+		<Item Name="Init_RCM.vi" Type="Ability VI" URL="../XControl/Ability/Init_RCM.vi">
+			<Property Name="NI.XItem.Name" Type="Str">Init</Property>
+		</Item>
+	</Item>
+	<Item Name="Property" Type="Folder">
+		<Item Name="RCM File Path" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM File Path</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM File Path</Property>
+			<Item Name="SetRCMFilePath_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMFilePath_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Position: All Elements" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Position</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Position: All Elements</Property>
+			<Item Name="SetRCMPosition_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMPosition_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Position: Left" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Position: Left</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Position: Left</Property>
+			<Item Name="SetRCMPosition_Left_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMPosition_Left_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Position: Top" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Position: Right</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Position: Top</Property>
+			<Item Name="SetRCMPosition_Top_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMPosition_Top_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Font: All Elements" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Font: All Elements</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Font: All Elements</Property>
+			<Item Name="SetRCMItemFont_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMItemFont_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Font: Name" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Font: Name</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Font: Name</Property>
+			<Item Name="SetRCMItemFont_Name_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMItemFont_Name_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Font: Size" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Font: Size</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Font: Size</Property>
+			<Item Name="SetRCMItemFont_Size_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMItemFont_Size_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Font: Color" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Font: Color</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Font: Color</Property>
+			<Item Name="SetRCMItemFont_Color_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMItemFont_Color_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Separator Color" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Seperator Color</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Separator Color</Property>
+			<Item Name="SetRCMSeparatorColor_RCM.vi" Type="Property VI" URL="../XControl/Property/SetRCMSeparatorColor_RCM.vi"/>
+		</Item>
+		<Item Name="RCM Frame Color" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Frame Color</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Frame Color</Property>
+			<Item Name="SetRCMFrameColor.vi" Type="Property VI" URL="../XControl/Property/SetRCMFrameColor.vi"/>
+		</Item>
+		<Item Name="RCM Overlay Color" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">RCM Overlay Color</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">RCM Overlay Color</Property>
+			<Item Name="SetRCMOverlayColor.vi" Type="Property VI" URL="../XControl/Property/SetRCMOverlayColor.vi"/>
+		</Item>
+	</Item>
+	<Item Name="Method" Type="Folder">
+		<Item Name="StartRCM_RCM.vi" Type="Method VI" URL="../XControl/Method/StartRCM_RCM.vi"/>
+		<Item Name="StartRCMWithParameters_RCM.vi" Type="Method VI" URL="../XControl/Method/StartRCMWithParameters_RCM.vi"/>
+		<Item Name="StopRCM_RCM.vi" Type="Method VI" URL="../XControl/Method/StopRCM_RCM.vi"/>
+		<Item Name="GetSelectedItemName_RCM.vi" Type="Method VI" URL="../XControl/Method/GetSelectedItemName_RCM.vi"/>
+	</Item>
+	<Item Name="SubVIs" Type="Folder">
+		<Item Name="OpenVIReference_RCM.vi" Type="VI" URL="../XControl/SubVIs/OpenVIReference_RCM.vi"/>
+	</Item>
+</XControl>
