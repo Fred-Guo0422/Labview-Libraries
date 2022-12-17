@@ -1,0 +1,10 @@
+错误信息：已关闭 Safe handle
+错误堆栈：   在 System.Runtime.InteropServices.SafeHandle.DangerousAddRef(Boolean& success)
+   在 System.StubHelpers.StubHelpers.SafeHandleAddRef(SafeHandle pHandle, Boolean& success)
+   在 Microsoft.Win32.UnsafeNativeMethods.GetOverlappedResult(SafeFileHandle hFile, NativeOverlapped* lpOverlapped, Int32& lpNumberOfBytesTransferred, Boolean bWait)
+   在 System.IO.Ports.SerialStream.EventLoopRunner.WaitForCommEvent()
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+错误方法：Void DangerousAddRef(Boolean ByRef)
